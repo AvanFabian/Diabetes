@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the scikit-learn modeln
-model = joblib.load("storage/model/diabetes.joblib")
+model = joblib.load("storage/model/diabetes1.joblib")
 
 @app.route('/predict-diabetes', methods=['POST'])
 def predict():
