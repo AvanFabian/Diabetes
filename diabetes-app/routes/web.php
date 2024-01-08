@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DiabetesPredictionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/diabetes', function () {
+    return view('FormDiabetes.index');
+});
+
+# Dipake kalo mau nampilin hasil prediksi di halaman web dengan memanggil fungsi predict di DiabetesPredictionController
+Route::post('/predict-diabetes', [DiabetesPredictionController::class, 'predict']);
+
