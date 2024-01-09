@@ -25,4 +25,5 @@ class DiabetesPredictionController extends Controller
         // Tampilkan hasil prediksi
         return view('FormDiabetes.index', ['prediction' => $prediction]);
     }
+
 }
