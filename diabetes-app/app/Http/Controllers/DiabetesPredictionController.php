@@ -23,8 +23,8 @@ class DiabetesPredictionController extends Controller
         $prediction = json_decode($response->getBody(), true)['prediction'];
         // dd($prediction);
         // Tampilkan hasil prediksi
-        // return view('FormDiabetes.index', ['prediction' => $prediction]);
-        return view('fitur.cekDiabetes', ['prediction' => $prediction]);
+        // return view('fitur.cekDiabetes', ['prediction' => $prediction]);
+        return redirect('/fitur-diabetes')->with('prediction', $prediction);
     }
 
 }

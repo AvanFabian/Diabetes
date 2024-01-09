@@ -188,8 +188,8 @@
                 <hr>
                 <div>
                     <h1>Prediction:</h1>
-                    @if (isset($prediction))
-                    <p>Kemungkinan diabetes {{ $prediction }}</p>
+                    @if (session('prediction'))
+                    <p>Kemungkinan diabetes {{ session('prediction') }}</p>
                     @else
                     <p>Tidak ada hasil prediksi</p>
                     @endif
