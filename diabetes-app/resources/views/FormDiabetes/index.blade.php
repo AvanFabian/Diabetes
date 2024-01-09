@@ -90,7 +90,7 @@
       </form>
       <h1>Prediction:</h1>
       @if (isset($prediction))
-         <p>Hasil Prediksi: {{ $prediction[0] }}</p>
+         <p>Kemungkinan diabetes {{ $prediction }}</p>
       @else
          <p>Tidak ada hasil prediksi</p>
       @endif
