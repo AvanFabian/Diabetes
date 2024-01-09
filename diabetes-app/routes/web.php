@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DiabetesPredictionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::get('/fitur-diabetes', function () {
     return view('fitur.cekDiabetes');
 })->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 
+Route::post('/fitur-diabetes', [DiabetesPredictionController::class, 'predict'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 
 
 include 'fromController.php';
