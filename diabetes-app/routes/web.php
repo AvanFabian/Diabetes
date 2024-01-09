@@ -22,11 +22,9 @@ Route::get('/', function () {
     return view('landingPage.landing');
 });
 
-
-
 Route::get('/fitur-diabetes', function () {
     return view('fitur.cekDiabetes');
-});
+})->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 
 
 

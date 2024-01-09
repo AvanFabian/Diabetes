@@ -6,11 +6,11 @@
     {{-- start konten --}}
     <div class="mt-2 container card">
         <div class="container">
-            <form action="{{ url("predict") }}" method="post">
+            <form action="{{ url("fitur-diabetes") }}" method="post">
                 @csrf
                 <h4 class="text-center mt-3">Data Kesehatan</h4>
                 <div class="row container mt-3">
-                    <form id="diabetesForm" action="/predict" method="POST" class="container" onsubmit="submitForm()">
+                    <form id="diabetesForm" action="/fitur-diabetes" method="POST" class="container" onsubmit="submitForm()">
                         <div class="col-md-4 mb-3">
                             {{-- blood --}}
                             <div class="mb-3">

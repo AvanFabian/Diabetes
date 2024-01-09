@@ -15,7 +15,7 @@ class DiabetesPredictionController extends Controller
         $client = new Client();
         # Kirim data ke API Python (sebelumnya harus dijalankan dulu API Python-nya)
         # command: python app.py
-        $response = $client->post('http://localhost:5000/predict', [
+        $response = $client->post('http://localhost:5000/fitur-diabetes', [
             'json' => ['input' => $data]  // Sesuaikan dengan input yang diharapkan oleh API Python
         ]);
 
@@ -23,7 +23,8 @@ class DiabetesPredictionController extends Controller
         $prediction = json_decode($response->getBody(), true)['prediction'];
         // dd($prediction);
         // Tampilkan hasil prediksi
-        return view('FormDiabetes.index', ['prediction' => $prediction]);
+        // return view('FormDiabetes.index', ['prediction' => $prediction]);
+        return view('fitur.cekDiabetes', ['prediction' => $prediction]);
     }
 
 }

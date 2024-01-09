@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Load the scikit-learn modeln
 model = joblib.load("storage/model/diabetes3.joblib")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/fitur-diabetes', methods=['POST'])
 def predict():
     data = request.get_json()
     # print(data)
