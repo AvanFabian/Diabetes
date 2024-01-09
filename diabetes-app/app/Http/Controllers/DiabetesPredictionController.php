@@ -11,9 +11,6 @@ class DiabetesPredictionController extends Controller
     {
         // Ambil data dari formulir
         $data = $request->all();
-        // echo 'data:' . $data . '<br>';
-        dd($data); // Cek data yang diterima
-        
         // Panggil API Python
         $client = new Client();
         # Kirim data ke API Python (sebelumnya harus dijalankan dulu API Python-nya)
@@ -24,7 +21,7 @@ class DiabetesPredictionController extends Controller
 
         // Ambil hasil prediksi dari respons API
         $prediction = json_decode($response->getBody(), true)['prediction'];
-
+        // dd($prediction);
         // Tampilkan hasil prediksi
         return view('FormDiabetes.index', ['prediction' => $prediction]);
     }

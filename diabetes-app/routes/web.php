@@ -23,5 +23,14 @@ Route::get('/diabetes', function () {
 });
 
 # Dipake kalo mau nampilin hasil prediksi di halaman web dengan memanggil fungsi predict di DiabetesPredictionController
-Route::post('/predict-diabetes', [DiabetesPredictionController::class, 'predict']);
+// Route::post('/predict', [DiabetesPredictionController::class, 'predict']);
+
+Route::group(['middleware' => 'web'], function () {
+    // Route-route web lainnya dengan proteksi CSRF
+    Route::group(['middleware' => 'web', 'except' => 'csrf'], function () {
+        // Route untuk komunikasi dengan Flask
+        Route::post('/predict', [DiabetesPredictionController::class, 'predict']);
+    });
+});
+
 
