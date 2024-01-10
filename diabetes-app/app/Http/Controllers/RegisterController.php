@@ -11,11 +11,12 @@ class RegisterController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('auth.register');
+        return view('auth.register1');
     }
 
     public function register(Request $request)
     {
+        // dump($request->all());
         $request->validate([
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
@@ -41,6 +42,6 @@ class RegisterController extends Controller
         $auth->signInWithEmailAndPassword($request->email, $request->password);
 
         // Redirect to the page after registration
-        return redirect('/')->with('userdata', compact('uid', 'email', 'emailVerified', 'displayName'));
+        return redirect('/landingPage')->with('userdata', compact('uid', 'email', 'emailVerified', 'displayName'));
     }
 }

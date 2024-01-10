@@ -22,8 +22,14 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/', function () {
+    return view('auth.login1');
+});
+
+Route::get('/landingPage', function () {
     return view('landingPage.landing');
 });
+
+
 
 Route::get('/fitur-diabetes', function () {
     return view('fitur.cekDiabetes');
@@ -32,11 +38,15 @@ Route::get('/fitur-diabetes', function () {
 Route::post('/fitur-diabetes', [DiabetesPredictionController::class, 'predict'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 
 # register
-Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [RegisterController::class, 'register']);
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('registerlur');
+Route::post('/register', [RegisterController::class, 'register'])->name("data_register");
+
 # login
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('loginbang');
 Route::post('/login', [LoginController::class, 'login']);
+
+#logout
+Route::post('/logout', [LoginController::class, 'logout']);
 
 include 'fromController.php';
 

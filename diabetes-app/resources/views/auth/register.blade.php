@@ -8,7 +8,7 @@
 <body>
     <h2>Register</h2>
 
-    <form method="POST" action="{{ route('register') }}">
+    {{-- <form method="POST" action="{{ route('register') }}"> --}}
         @csrf
 
         <label for="email">Email:</label>
