@@ -2,22 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Kreait\Laravel\Firebase\Facades\Firebase;
 
 class LoginController extends Controller
 {
-    use AuthenticatesUsers;
-
-    protected $redirectTo = '/home';
-
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
-
     public function showLoginForm()
     {
         return view('auth.login');
@@ -30,11 +19,29 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        // Authenticate user with Firebase
-        Firebase::signInWithEmailAndPassword($request->email, $request->password);
+        $auth = Firebase::auth();
 
-        // Redirect to home or any other page after login
-        return redirect('/home');
+        try {
+            // Attempt to sign in the user
+            $auth->signInWithEmailAndPassword($request->email, $request->password);
+            // dd($request->email);
+            // If successful, redirect to the desired page
+            return redirect('/')->with('userdatalogin', $request->email);
+        } catch (\Kreait\Firebase\Auth\SignIn\FailedToSignIn $exception) {
+            // If sign-in fails, you may handle it accordingly
+            // For example, you can redirect back to the login form with an error message
+            return redirect()->back()->withInput()->withErrors(['email' => 'Invalid credentials']);
+        }
+    }
+
+    public function logout()
+    {
+        $auth = Firebase::auth();
+
+        // Sign out the currently authenticated user
+        $auth->signOut();
+
+        // Redirect to the desired page after logout
+        return redirect('/');
     }
 }
-

@@ -6,12 +6,17 @@
 
    @if (session('userdata'))
       <div class="alert alert-success alert-dismissible fade show" role="alert">
-         <strong>DATA USER: {{ session('userdata') }}</strong>
+         <strong>DATA USER LOGIN: {{ session('userdata')['email'] }}</strong>
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+   @elseif (session('userdatalogin'))
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+         <strong>DATA USER LOGIN: {{ session('userdatalogin') }}</strong>
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
    @else
       <div>
-         BELUM REGISTER
+         BELUM REGISTER / LOGIN
       </div>
    @endif
    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
