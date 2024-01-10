@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+    
+        'api' => [
+            'driver' => 'firebase', // Gunakan driver Firebase
+            'provider' => 'users',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -61,7 +67,7 @@ return [
 
     'providers' => [
         'users' => [
-            'driver' => 'eloquent',
+            'driver' => 'firebase',
             'model' => App\Models\User::class,
         ],
 
