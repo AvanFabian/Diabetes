@@ -1,4 +1,4 @@
-NPC Team - 
+NPC Team - \n
 we create a diabetes prediction website using machine learning with algorithms ****
 
 rename 
