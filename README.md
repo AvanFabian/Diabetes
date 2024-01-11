@@ -1,6 +1,5 @@
-From NPC Team 
-
-
+NPC Team - 
+we create a diabetes prediction website using machine learning with algorithms ****
 
 rename 
 ``` .env.example to .env ```
