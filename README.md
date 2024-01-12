@@ -20,7 +20,7 @@ API endpoint:
 ![Screenshot 2024-01-12 183640](https://github.com/AvanFabian/diacare.id/assets/113287159/47097da6-ea88-40b4-8059-ffef3f9c445c)
 
 Landing Page:
-![Screenshot 2024-01-12 183614](https://github.com/AvanFabian/diacare.id/assets/113287159/b5a0d78d-0be1-4820-9b9a-c2462b51e8aa)
+![Screenshot 2024-01-12 185034](https://github.com/AvanFabian/diacare.id/assets/113287159/1fd366f1-738f-4de0-863f-61af9ed6ce8d)
 
 Prediction Form:
-![Screenshot 2024-01-12 183640](https://github.com/AvanFabian/diacare.id/assets/113287159/e8a31118-c967-41d9-a470-a7b39419881a)
+![Screenshot 2024-01-12 185046](https://github.com/AvanFabian/diacare.id/assets/113287159/09f9c44c-e1ee-401b-8fd2-6ec7d71c93e9)
