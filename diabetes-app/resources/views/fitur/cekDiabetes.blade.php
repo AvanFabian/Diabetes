@@ -19,35 +19,35 @@
 
                             {{-- kolesterol --}}
                             <div class="mb-3">
-                                <label for="HighChol" class="form-label">High Cholesterol</label>
+                                <label for="HighChol" class="form-label">High Cholesterol <br /></label>
                                 <input type="number" name="HighChol" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- kolesterol check --}}
                             <div class="mb-3">
-                                <label for="CholCheck" class="form-label">Cholesterol Check</label>
+                                <label for="CholCheck" class="form-label">Cholesterol Check <br /></label>
                                 <input type="number" name="CholCheck" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- BMI --}}
                             <div class="mb-3">
-                                <label for="Bmi" class="form-label">Number of Body Mass Index</label>
+                                <label for="Bmi" class="form-label">Number of Body Mass Index <br /></label>
                                 <input type="number" name="Bmi" required placeholder="input BMI" class="form-control"
                                     required>
                             </div>
 
                             {{-- Smoker --}}
                             <div class="mb-3">
-                                <label for="Smoker" class="form-label">Smoker</label>
+                                <label for="Smoker" class="form-label">Smoker <br /></label>
                                 <input type="number" name="Smoker" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- Stroke --}}
                             <div class="mb-3">
-                                <label for="Stroke" class="form-label">Ever told you had a stroke</label>
+                                <label for="Stroke" class="form-label">Ever told you had a stroke <br /></label>
                                 <input type="number" name="Stroke" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
@@ -55,7 +55,7 @@
                             {{-- Heart Disease or Attack --}}
                             <div class="mb-3">
                                 <label for="HeartDiseaseorAttack" class="form-label">Coronary Heart Disease or
-                                    Myocardial
+                                    Myocardial <br />
                                     Infarction</label>
                                 <input type="number" name="HeartDiseaseorAttack" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
@@ -63,7 +63,7 @@
 
                             {{-- Physical Activity --}}
                             <div class="mb-3">
-                                <label for="PhysActivity" class="form-label">Physical Activity in past 30 days</label>
+                                <label for="PhysActivity" class="form-label">Physical Activity in past 30 days <br /></label>
                                 <input type="number" name="PhysActivity" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
@@ -75,14 +75,14 @@
                             {{-- Vegges --}}
                             <div class="mb-3">
                                 <label for="Veggies" class="form-label">Consume Vegetables 1 or more times per
-                                    day</label>
+                                    day <br /></label>
                                 <input type="number" name="Veggies" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- alkohol --}}
                             <div class="mb-3">
-                                <label for="HvyAlcoholConsump" class="form-label">Heavy Alcohol Consumption[]</label>
+                                <label for="HvyAlcoholConsump" class="form-label">Heavy Alcohol Consumption <br /></label>
                                 <input type="number" name="HvyAlcoholConsump" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
@@ -90,7 +90,7 @@
                             {{-- health care converage --}}
                             <div class="mb-3">
                                 <label for="AnyHealthcare" class="form-label">Have any kind of health care
-                                    coverage</label>
+                                    coverage <br /></label>
                                 <input type="number" name="AnyHealthcare" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
@@ -99,7 +99,7 @@
                             <div class="mb-3">
                                 <label for="NoDocbcCost" class="form-label">Unable to see a doctor because of cost in
                                     the
-                                    past 12 months</label>
+                                    past 12 months <br /></label>
                                 <input type="number" name="NoDocbcCost" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
@@ -107,14 +107,14 @@
 
                             {{-- General Health --}}
                             <div class="mb-3">
-                                <label for="GenHlth" class="form-label">General Health</label>
+                                <label for="GenHlth" class="form-label">General Health <br /></label>
                                 <input type="number" name="GenHlth" min="0" max="5" required placeholder="0 - 30"
                                     class="form-control">
                             </div>
 
                             {{-- Days of poor mental health --}}
                             <div class="mb-3">
-                                <label for="MentHlth" class="form-label">Days of poor mental health</label>
+                                <label for="MentHlth" class="form-label">Days of poor mental health <br /></label>
                                 <input type="number" name="MentHlth" min="1" max="30" required placeholder="0 - 30"
                                     class="form-control">
                             </div>
@@ -122,7 +122,7 @@
                             {{-- Physical illness or injury days in past 30 days --}}
                             <div class="mb-3">
                                 <label for="PhysHlth" class="form-label">Physical illness or injury days in past 30
-                                    days</label>
+                                    days <br /></label>
                                 <input type="number" name="PhysHlth" min="1" max="30" required placeholder="0 - 30"
                                     class="form-control">
                             </div>
@@ -133,13 +133,13 @@
                         <div class="col-md-4">
                             {{-- Fruits --}}
                             <div class="mb-3">
-                                <label for="Fruits" class="form-label">Consume Fruit 1 or more times per day</label>
+                                <label for="Fruits" class="form-label">Consume Fruit 1 or more times per day <br /></label>
                                 <input type="number" name="Fruits" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
                             {{-- PDays of poor mental health  --}}
                             <div class="mb-3">
-                                <label for="MentHlth" class="form-label">Days of poor mental health </label>
+                                <label for="MentHlth" class="form-label">Days of poor mental health <br /> </label>
                                 <input type="number" name="PhysHlth" min="1" max="30" required placeholder=" 1- 30"
                                     class="form-control">
                             </div>
@@ -147,21 +147,21 @@
                             {{--difwalk --}}
                             <div class="mb-3">
                                 <label for="DiffWalk" class="form-label">Serious difficulty walking or climbing
-                                    stairs</label>
+                                    stairs <br /></label>
                                 <input type="number" name="DiffWalk" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- sex --}}
                             <div class="mb-3">
-                                <label for="Sex" class="form-label">Sex </label>
+                                <label for="Sex" class="form-label">Sex <br /> </label>
                                 <input type="number" name="Sex" min="0" max="1" required
                                     placeholder="0 = female, 1 = male" class="form-control">
                             </div>
 
                             {{-- age --}}
                             <div class="mb-3">
-                                <label for="Age" class="form-label">Age </label>
+                                <label for="Age" class="form-label">Age <br /> </label>
                                 <input type="number" name="Age" min="1" max="13" required
                                     placeholder="1 = 18-24, 9 = 60-64, 13 = 80 or older" class="form-control">
                             </div>
@@ -169,14 +169,14 @@
                             {{-- Education Level --}}
 
                             <div class="mb-3">
-                                <label for="Education" class="form-label">Education level (Scale 1-6)</label>
+                                <label for="Education" class="form-label">Education level (Scale 1-6) <br /></label>
                                 <input type="number" name="Education" min="1" max="6" required placeholder="1 - 6"
                                     class="form-control">
                             </div>
 
                             {{-- income --}}
                             <div class="mb-3">
-                                <label for="Income" class="form-label">Income Scale</label>
+                                <label for="Income" class="form-label">Income Scale <br /></label>
                                 <input type="number" name="Income" min="1" max="8" required placeholder="1 - 8"
                                     class="form-control">
                             </div>
