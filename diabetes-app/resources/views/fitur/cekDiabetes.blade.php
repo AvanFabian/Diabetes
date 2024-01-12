@@ -12,28 +12,28 @@
                         <div class="col-md-4 mb-3">
                             {{-- blood --}}
                             <div class="mb-3">
-                                <label for="HighBP" class="form-label">High Blood Pressure</label>
+                                <label for="HighBP" class="form-label">High Blood Pressure <br /> 0 = no high BP 1 = high BP</label>
                                 <input type="number" name="HighBP" min="0" max="1" required 
                                     placeholder="0 = no, 1 = yes" class="form-control" >
                             </div>
 
                             {{-- kolesterol --}}
                             <div class="mb-3">
-                                <label for="HighChol" class="form-label">High Cholesterol <br /></label>
+                                <label for="HighChol" class="form-label">High Cholesterol <br /> 0 = no high cholesterol 1 = high cholesterol</label>
                                 <input type="number" name="HighChol" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- kolesterol check --}}
                             <div class="mb-3">
-                                <label for="CholCheck" class="form-label">Cholesterol Check <br /></label>
+                                <label for="CholCheck" class="form-label"><strong>Cholesterol Check</strong> <br /> 0 = no cholesterol check in 5 years 1 = yes cholesterol check in 5 years</label>
                                 <input type="number" name="CholCheck" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
 
                             {{-- BMI --}}
                             <div class="mb-3">
-                                <label for="Bmi" class="form-label">Number of Body Mass Index <br /></label>
+                                <label for="Bmi" class="form-label">Number of Body Mass Index <br /> Body Mass Index</label>
                                 <input type="number" name="Bmi" required placeholder="input BMI" class="form-control"
                                     required>
                             </div>
