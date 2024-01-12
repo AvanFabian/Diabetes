@@ -9,7 +9,8 @@ model = joblib.load("storage/model/diabetes3.joblib")
 @app.route('/fitur-diabetes', methods=['POST'])
 def predict():
     data = request.get_json()
-    input_values = list(map(float, data['input'].values()))
+    # input_values = list(map(float, data['input'].values())) -> enable if want to predict using form 
+    input_values = list(map(float, data['input'])) # -> enable if want to predict using postman
     prediction = model.predict_proba([input_values]).tolist()
     # Mengambil probabilitas kelas positif (misalnya, indeks 1)
     positive_probability = prediction[0][1]

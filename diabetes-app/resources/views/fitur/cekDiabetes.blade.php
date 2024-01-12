@@ -137,12 +137,6 @@
                                 <input type="number" name="Fruits" min="0" max="1" required
                                     placeholder="0 = no, 1 = yes" class="form-control">
                             </div>
-                            {{-- PDays of poor mental health  --}}
-                            <div class="mb-3">
-                                <label for="MentHlth" class="form-label">Days of poor mental health <br /> </label>
-                                <input type="number" name="PhysHlth" min="1" max="30" required placeholder=" 1- 30"
-                                    class="form-control">
-                            </div>
 
                             {{--difwalk --}}
                             <div class="mb-3">
