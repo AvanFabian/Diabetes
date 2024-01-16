@@ -29,7 +29,13 @@ Route::get('/landingPage', function () {
     return view('landingPage.landing');
 });
 
+Route::get('/tentang', function () {
+    return view('landingPage.Tentang');
+});
 
+Route::get('/timkami', function () {
+    return view('landingPage.TimKami');
+});
 
 Route::get('/fitur-diabetes', function () {
     return view('fitur.cekDiabetes');
